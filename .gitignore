@@ -1,0 +1,4 @@
+﻿frontend/ai-habit-tracker-ui-boilerplate-code/.git-backup/
+**/node_modules/
+.env
+**/.env
