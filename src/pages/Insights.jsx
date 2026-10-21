@@ -51,7 +51,7 @@ export default function Insights() {
   const grid = isDark ? "rgba(255,255,255,0.08)" : "rgba(15,15,27,0.08)";
   const tick = isDark ? "#8a8aa0" : "#6b6b78";
   const tooltipStyle = {
-    background: isDark ? "rgba(20,20,36,0.95)" : "rgba(255,255,255,0.95)",
+    background: isDark ? "rgba(20,20,36,0.95)" : "rgba(245,240,255,0.95)",
     border: `1px solid ${grid}`,
     borderRadius: 12,
     fontSize: 12,
@@ -459,7 +459,7 @@ export default function Insights() {
                     innerRadius={50}
                     outerRadius={80}
                     paddingAngle={2}
-                    stroke={isDark ? "rgba(255,255,255,0.06)" : "#ffffff"}
+                    stroke={isDark ? "rgba(255,255,255,0.06)" : "#F5F0FF"}
                     strokeWidth={2}
                   >
                     {categoryData.map((_, i) => (

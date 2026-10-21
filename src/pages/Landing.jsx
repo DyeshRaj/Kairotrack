@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useTheme } from "../context/ThemeContext.jsx";
-import OrbitingHabits from "../components/OrbitingHabits.jsx";
 
 const features = [
   {
@@ -70,8 +69,7 @@ export default function Landing() {
       </header>
 
       <section className="max-w-6xl mx-auto px-6 pt-10 md:pt-16 pb-16">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-center">
-          <div className="lg:col-span-8 text-center lg:text-left order-2 lg:order-1">
+        <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-1.5 chip mb-5 bg-brand-500/15 text-brand-700 dark:text-brand-300">
               <Sparkles size={12} />
               AI-powered habit coach
@@ -89,7 +87,7 @@ export default function Landing() {
               Track your habits, watch your streaks grow, and let AI turn your
               data into real encouragement — not generic motivation.
             </p>
-            <div className="mt-8 flex items-center justify-center lg:justify-start gap-3">
+            <div className="mt-8 flex items-center justify-center gap-3">
               <Link to="/register" className="btn-primary px-5 py-3 text-base">
                 Start free
                 <ArrowRight size={16} />
@@ -98,11 +96,6 @@ export default function Landing() {
                 I have an account
               </Link>
             </div>
-          </div>
-
-          <div className="lg:col-span-4 order-1 lg:order-2 flex justify-center lg:-mr-36">
-            <OrbitingHabits />
-          </div>
         </div>
 
         <div className="mt-14 md:mt-20 grid md:grid-cols-2 gap-6">
@@ -209,7 +202,7 @@ export default function Landing() {
             className="absolute inset-0 pointer-events-none opacity-50"
             style={{
               background:
-                "radial-gradient(circle at 20% 10%, rgba(255,255,255,0.25), transparent 55%), radial-gradient(circle at 80% 80%, rgba(236,72,153,0.3), transparent 55%)",
+                "radial-gradient(circle at 20% 10%, rgba(245,240,255,0.25), transparent 55%), radial-gradient(circle at 80% 80%, rgba(236,72,153,0.3), transparent 55%)",
             }}
           />
           <div className="relative">
@@ -227,7 +220,7 @@ export default function Landing() {
             </p>
             <Link
               to="/register"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white text-brand-700 px-5 py-3 text-sm font-semibold hover:bg-brand-50 transition shadow-xl"
+              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#F5F0FF] text-brand-700 px-5 py-3 text-sm font-semibold hover:bg-brand-50 transition shadow-xl"
             >
               Create my account
               <ArrowRight size={16} />

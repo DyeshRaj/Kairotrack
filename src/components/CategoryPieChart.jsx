@@ -38,7 +38,7 @@ export default function CategoryPieChart({ data }) {
                 innerRadius={50}
                 outerRadius={80}
                 paddingAngle={2}
-                stroke={theme === "dark" ? "rgba(255,255,255,0.06)" : "#ffffff"}
+                stroke={theme === "dark" ? "rgba(255,255,255,0.06)" : "#F5F0FF"}
                 strokeWidth={2}
               >
                 {data.map((_, i) => (
@@ -48,7 +48,7 @@ export default function CategoryPieChart({ data }) {
               <Tooltip
                 contentStyle={{
                   background:
-                    theme === "dark" ? "rgba(20,20,36,0.95)" : "rgba(255,255,255,0.95)",
+                    theme === "dark" ? "rgba(20,20,36,0.95)" : "rgba(245,240,255,0.95)",
                   border: `1px solid ${
                     theme === "dark" ? "rgba(255,255,255,0.1)" : "rgba(15,15,27,0.08)"
                   }`,

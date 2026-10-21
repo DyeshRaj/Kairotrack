@@ -13,7 +13,7 @@ export default function WeeklyBarChart({ data, title = "Last 7 days" }) {
   const { theme } = useTheme();
   const grid = theme === "dark" ? "rgba(255,255,255,0.08)" : "rgba(15,15,27,0.08)";
   const tick = theme === "dark" ? "#8a8aa0" : "#6b6b78";
-  const tooltipBg = theme === "dark" ? "rgba(20,20,36,0.95)" : "rgba(255,255,255,0.95)";
+  const tooltipBg = theme === "dark" ? "rgba(20,20,36,0.95)" : "rgba(245,240,255,0.95)";
   const tooltipBorder = theme === "dark" ? "rgba(255,255,255,0.1)" : "rgba(15,15,27,0.08)";
   return (
     <div className="card p-5">
